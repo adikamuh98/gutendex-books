@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen>
     _cubit = HomeScreenCubit(getBooksUsecase: sl<GetBooksUsecase>())
       ..init(_currentPage);
     _searchController.addListener(_listener);
-    _scrollController.addListener(_scrollListener);
+    _scrollController.addListener(() => _scrollListener(_cubit));
   }
 
   @override
@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen>
     _cubit.close();
     _searchController.removeListener(_listener);
     _searchController.dispose();
-    _scrollController.removeListener(_scrollListener);
+    _scrollController.removeListener(() => _scrollListener(_cubit));
     _scrollController.dispose();
     super.dispose();
   }
@@ -52,9 +52,10 @@ class _HomeScreenState extends State<HomeScreen>
     });
   }
 
-  void _scrollListener() {
+  void _scrollListener(HomeScreenCubit cubit) {
     if (_scrollController.position.pixels ==
         _scrollController.position.maxScrollExtent) {
+      if (cubit.state is Loading) return;
       _currentPage++;
       _cubit.init(_currentPage);
     }

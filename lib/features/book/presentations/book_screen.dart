@@ -7,8 +7,8 @@ import 'package:palmcode/features/book/domain/usecases/is_book_loved_usecase.dar
 import 'package:palmcode/features/book/domain/usecases/remove_lovedbook_usecase.dart';
 import 'package:palmcode/features/book/domain/usecases/save_lovebook_usecase.dart';
 import 'package:palmcode/features/book/presentations/blocs/book_screen_cubit.dart';
-import 'package:palmcode/features/home/domain/data/author.dart';
-import 'package:palmcode/features/home/domain/data/book.dart';
+import 'package:palmcode/features/home/domain/entities/author.dart';
+import 'package:palmcode/features/home/domain/entities/book.dart';
 import 'package:palmcode/features/home/domain/usecases/get_book_usecase.dart';
 
 class BookScreen extends StatefulWidget {

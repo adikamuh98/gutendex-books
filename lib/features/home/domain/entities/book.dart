@@ -1,5 +1,5 @@
-import 'package:palmcode/features/home/domain/data/author.dart';
-import 'package:palmcode/features/home/domain/data/format.dart';
+import 'package:palmcode/features/home/domain/entities/author.dart';
+import 'package:palmcode/features/home/domain/entities/format.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'book.g.dart';

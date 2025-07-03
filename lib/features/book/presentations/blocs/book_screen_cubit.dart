@@ -4,7 +4,7 @@ import 'package:palmcode/core/models/state_controller.dart';
 import 'package:palmcode/features/book/domain/usecases/is_book_loved_usecase.dart';
 import 'package:palmcode/features/book/domain/usecases/remove_lovedbook_usecase.dart';
 import 'package:palmcode/features/book/domain/usecases/save_lovebook_usecase.dart';
-import 'package:palmcode/features/home/domain/data/book.dart';
+import 'package:palmcode/features/home/domain/entities/book.dart';
 import 'package:palmcode/features/home/domain/usecases/get_book_usecase.dart';
 
 class BookScreenCubit extends Cubit<StateController<Book>> {

@@ -1,6 +1,6 @@
 import 'package:palmcode/features/home/data/datasources/home_datasource.dart';
 import 'package:palmcode/features/home/data/models/get_books_response.dart';
-import 'package:palmcode/features/home/domain/data/book.dart';
+import 'package:palmcode/features/home/domain/entities/book.dart';
 import 'package:palmcode/features/home/domain/repositories/home_repository.dart';
 
 class HomeRepositoryImpl implements HomeRepository {

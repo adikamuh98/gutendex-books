@@ -5,7 +5,7 @@ import 'package:palmcode/core/models/state_controller.dart';
 import 'package:palmcode/core/themes/themes.dart';
 import 'package:palmcode/features/book/domain/usecases/get_lovedbooks_usecase.dart';
 import 'package:palmcode/features/book/presentations/book_screen.dart';
-import 'package:palmcode/features/home/domain/data/book.dart';
+import 'package:palmcode/features/home/domain/entities/book.dart';
 import 'package:palmcode/features/home/domain/usecases/get_books_by_ids.dart';
 import 'package:palmcode/features/home/presentation/blocs/liked_books_screen_cubit.dart';
 

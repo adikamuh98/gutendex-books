@@ -2,7 +2,7 @@ import 'package:palmcode/core/constants/api_constant.dart';
 import 'package:palmcode/core/networks/networks.dart';
 import 'package:palmcode/features/home/data/datasources/home_datasource.dart';
 import 'package:palmcode/features/home/data/models/get_books_response.dart';
-import 'package:palmcode/features/home/domain/data/book.dart';
+import 'package:palmcode/features/home/domain/entities/book.dart';
 
 class HomeDatasourceImpl implements HomeDatasource {
   final DioClient dioClient;

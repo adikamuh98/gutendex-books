@@ -1,4 +1,4 @@
-import 'package:palmcode/features/home/domain/data/book.dart';
+import 'package:palmcode/features/home/domain/entities/book.dart';
 import 'package:palmcode/features/home/domain/repositories/home_repository.dart';
 
 class GetBooksByIds {
